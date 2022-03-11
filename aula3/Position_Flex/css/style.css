@@ -1,0 +1,77 @@
+/*
+
+##### fixed #####
+
+h1 {
+  border: 2px solid #ccc;
+  padding: 20px 20px 300px 20px;
+} */
+
+/* p {
+  background: #e7e7e7;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 20px;
+  margin: 0px;
+} */
+
+/* .fixo {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+} */
+
+/* ###  Relative e absoluto##  */
+
+/* 
+@relative
+Continua preenchendo o espaço mesmo estando em outro lugar 
+
+@absolute
+ Não ocupa mais o espaço do item "como se não estivesse existindo"
+ e para o absolute respeitar o tamanho do pai deve ser usado 
+ o position:relative 
+é usado  em casos bem pontuais
+*/
+
+/* div {
+  border: 2px solid #ccc;
+  margin-top: 40px;
+  padding: 20px 20px 40px 20px;
+  position: relative; se remove pra mostrar o relative
+}
+
+span {
+  background: #e7e7e7;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 0px;
+  position: absolute;
+  top: 0;
+} */
+
+/* ### Z-index */
+
+/* h1 {
+  margin: 0px;
+  padding: 10px;
+  background: lightblue;
+} */
+
+/* Quando colocamos um position o elemento fica em uma 
+posição acima dos restantes do site
+*/
+/* .index1 {
+  position: relative;
+  background: greenyellow;
+  top: 20px;
+  z-index: -1;
+}
+
+.index2 {
+  position: absolute;
+  top: 30px;
+  background: lightcoral;
+} */

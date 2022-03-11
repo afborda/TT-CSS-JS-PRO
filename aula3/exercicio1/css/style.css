@@ -1,0 +1,142 @@
+:root {
+  --width-box: 250px;
+  --height-box: 250px;
+}
+
+/*
+body {
+  background: #001f3a;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.box1 {
+  background: #ff912e;
+  width: var(--width-box);
+  height: var(--height-box);
+  margin: var(--margin-box);
+  position: absolute;
+}
+
+.box2 {
+  background: #870093;
+  width: var(--width-box);
+  height: var(--height-box);
+  margin: var(--margin-box);
+  left: 280px;
+  position: absolute;
+}
+
+.box3 {
+  background: #00396b;
+  width: var(--width-box);
+  height: var(--height-box);
+  margin: var(--margin-box);
+  left: 570px;
+
+  position: absolute;
+}
+
+.box4 {
+  background: #00396b;
+  width: var(--width-box);
+  height: var(--height-box);
+  margin: var(--margin-box);
+  top: 280px;
+  position: absolute;
+}
+.box5 {
+  background: #fff;
+  width: var(--width-box);
+  height: var(--height-box);
+  margin: var(--margin-box);
+  top: 280px;
+  left: 280px;
+  position: absolute;
+  align-content: center;
+}
+
+.text {
+  margin-top: 45%;
+  text-align: center;
+}
+
+.box5 .text {
+  color: red;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.box4 .text {
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 34px;
+  font-weight: bold;
+} */
+
+/* sem position */
+body {
+  background: #001f3a;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.first-container div,
+.second-container div {
+  display: inline-block;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  margin: 10px;
+  width: var(--width-box);
+  height: var(--height-box);
+}
+
+.box1 {
+  background: #ff912e;
+}
+
+.box2 {
+  background: #870093;
+}
+
+.box3 {
+  background: #00396b;
+}
+
+.box4 {
+  background: #00396b;
+}
+
+.text {
+  margin-top: 45%;
+  text-align: center;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.box5 .text {
+  color: red;
+}
+
+.box4 .text {
+  color: #fff;
+}
+
+.box5:not(.box1, .box2, .box3, .box4) {
+  background: #fff;
+}
