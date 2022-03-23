@@ -1,0 +1,30 @@
+@if $tema == light {
+  $cor-botao: #005c91;
+  $cor-fundo: #fff;
+  $cor-texto: #001f3a;
+} @else if $tema == dark {
+  $cor-botao: red;
+  $cor-fundo: #001f3a;
+  $cor-texto: #fff;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: $cor-fundo;
+  flex-direction: column;
+
+  @include device(mobile) {
+    background: red;
+  }
+
+  @include device(tablet) {
+    background: greenyellow;
+  }
+
+  @include device(web) {
+    background: rebeccapurple;
+  }
+}

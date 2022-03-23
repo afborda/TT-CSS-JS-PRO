@@ -1,0 +1,49 @@
+main {
+  max-width: 500px;
+  @include border-box;
+}
+
+h1 {
+  @include titulo-primario;
+  @include separador( #07ac1d, 150px );
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: $cor-primaria;
+  padding: 10px;
+  border-radius: 8px;
+  color: $texto-botao;
+  font-weight: bold;
+  font-family: $font-primaria;
+}
+
+p {
+  color: $cor-texto;
+  font-weight: 400;
+  margin-bottom: $gutter;
+  @include type-1(24);
+  @include device(mobile) {
+    background: #001f3a;
+    color: #07ac1d;
+  }
+}
+
+ul {
+  text-align: center;
+  li {
+    display: inline-block;
+    list-style: none;
+    a {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+      background: $cor-botao;
+      color: #fff;
+      &:hover {
+        background: pink;
+      }
+    }
+  }
+}
